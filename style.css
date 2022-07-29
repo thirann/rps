@@ -1,0 +1,176 @@
+html, body {
+  margin:0;
+  height:100%;
+  width:100%;
+  font-family: 'Roboto', sans-serif;
+  box-sizing:border-box;
+}
+
+p {
+  text-align:center;
+  font-size:20px;
+}
+
+/* Body background changing colors */
+body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header Title */
+header a,h2{
+  text-decoration: none;
+  text-align:center;
+  color:white;
+  font-weight:400;
+}
+
+.scores {
+  display: flex;
+  justify-content: center;
+  gap:50px;
+}
+
+.player-score,.computer-score{
+  text-align: center;
+  width: 220px;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 5px;
+  margin-top:50px;
+  font-size:25px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  animation-name:score;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes score {
+   0% { transform: translate(0, -100px); }
+	100% { transform: translate(0, 0px); }
+}
+
+/* Start button */
+#start{
+  padding: 20px 60px;
+  border:none;
+  border-radius:5px;
+  font-weight:700;
+  cursor:pointer;
+  font-size: 20px;
+}
+
+#start:hover{  
+  box-shadow: 2px 2px #888888;
+}
+
+.floating {
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, 0px); }
+}
+
+.start-btn{
+  text-align:center;
+  margin-top:25vh;
+}
+
+/* Image sections - btn===image clickable */
+.rps-hands{
+  margin-top:-120px;
+}
+
+.rps-buttons{
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap:50px;
+  margin-top:80px;
+}
+
+#btn-rock,#btn-scissor,#btn-paper{
+  cursor:pointer;
+  border: white solid 4px;
+  border-radius:5px;
+}
+
+#btn-rock:hover,#btn-scissor:hover,#btn-paper:hover{
+  transform:scale(1.1);
+  transition:0.5s;
+}
+
+/* Result Toggle - Left Strip Color */
+.tie{ 
+  width:20%;
+  text-align: center;
+  margin:80px auto;  
+  background-color:#dbd2d2;
+  padding: 20px 100px;
+  font-size: 30px;
+  font-weight: 400;
+  border-left: #e6ea10 solid 5px;
+  
+}
+
+.won{
+  width:20%;
+  text-align: center;
+  margin:80px auto;  
+  background-color:#dbd2d2;
+  padding: 20px 100px;
+  font-size: 30px;
+  font-weight: 400;
+  border-left: green solid 5px;
+}
+
+.lose{
+  width:20%;
+  text-align: center;
+  margin:80px auto;  
+  background-color:#dbd2d2;
+  padding: 20px 100px;
+  font-size: 30px;
+  font-weight: 400;
+  border-left: red solid 5px;
+}
+
+footer {
+  position: relative;
+    
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.none{
+  display:none;
+}

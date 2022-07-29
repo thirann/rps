@@ -1,13 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RPS Game</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-	<script src="script.js" defer></script>
-  </body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!--Header-->
+  <header>
+    <a href="https://rps-ui.thirann.repl.co/">
+      <h2>Rock 👊 | Paper ✋ | Scissor ✌️ Game</h2>
+    </a>
+  </header>
+
+  <!--Scores-->
+  <div class="scores none">
+    <div class="player-score">⛹️‍♂️ Scoreboard</div>
+    <div class="computer-score">💻 Scoreboard</div>
+  </div>
+
+  <!-- Start Game -->
+  <div class="start-btn floating">
+    <button id="start">Start Game</button>
+  </div>
+
+  <!-- Rock, Paper & Scissor  -->
+  <section class="rps-hands none">
+    <p>Let's start rock, paper & scissor game. Now choose your weapon below! </p>
+    <div class="rps-buttons">
+      <a>
+        <img id="btn-rock" src="https://media.giphy.com/media/26gsdS1KCyxwTl6IU/giphy.gif" alt="rock" width="100"
+          height="132">
+      </a>
+      <a>
+        <img id="btn-scissor" src="https://media.giphy.com/media/ujH30A5YftV0Z0gvs0/giphy.gif" alt="scissor" width="100"
+          height="132">
+      </a>
+      <a>
+        <img id="btn-paper" src="https://media.giphy.com/media/WNhxL5edM8Tn6aISYh/giphy.gif" alt="paper" width="100"
+          height="132">
+      </a>
+    </div>
+  </section>
+
+  <!--Result display -->
+  <div class="result none"></div>
+
+  <!--Footer-->
+  <footer>
+    <p>Made by ❤ <a href="https://github.com/thirann">Thirann</a></p>
+  </footer>
+
+  <!--External script-->
+  <script src="script.js"></script>
+
+  <!--
+This script places a badge on your repl's full-browser view back to your repl's cover page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green, teal, blue, blurple, magenta, pink!
+-->
+  <!--<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>-->
+
+</body>
+
 </html>
