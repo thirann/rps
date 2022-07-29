@@ -1,3 +1,3 @@
 # rps
 Rock Paper Scissor Game
-https://thirann.github.com/rps/
+https://thirann.github.io/rps/
